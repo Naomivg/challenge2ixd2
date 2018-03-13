@@ -1,3 +1,8 @@
+#clock {
+   text-align: center;
+   font-size: 15px;
+   font-family: "Mashine";
+}
 
 /*TABLET*/
 @media only screen and (min-width: 768px) and (max-width: 1250px){
@@ -8,6 +13,7 @@
 @media only screen and (min-width: 1250px) and (max-width: 1950px){
 
 }
+
 
 @media only screen and (min-width: 1950px){
 
