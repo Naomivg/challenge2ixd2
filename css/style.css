@@ -1,21 +1,36 @@
 #clock {
    display: flex;
    justify-content: center;
-   font-size: 15px;
+   font-size: 20px;
    font-family: "Mashine";
 }
 
 /*TABLET*/
 @media only screen and (min-width: 768px) and (max-width: 1250px){
-
+	#clock {
+	   display: flex;
+	   justify-content: center;
+	   font-size: 15px;
+	   font-family: "Mashine";
+	}
 }
 
 /*DESKTOP*/
 @media only screen and (min-width: 1250px) and (max-width: 1950px){
-
+	#clock {
+	   display: flex;
+	   justify-content: center;
+	   font-size: 12px;
+	   font-family: "Mashine";
+	}
 }
 
 
 @media only screen and (min-width: 1950px){
-
+	#clock {
+	   display: flex;
+	   justify-content: center;
+	   font-size: 10px;
+	   font-family: "Mashine";
+	}
 }
