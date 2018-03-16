@@ -16,6 +16,9 @@ window.onload = function() {
 	    var hours = time.getHours();
 	    var minutes = time.getMinutes();
 	    var seconds = time.getSeconds();
+
+	    seconds = ('0' + time.getSeconds()).slice(-2);
+
 	    document.getElementById("clock").innerHTML = 
 	    (hours + ":" + minutes + ":" + seconds);
 
