@@ -1,3 +1,7 @@
+body{
+	background-color: white;
+}
+
 #clock {
    display: flex;
    justify-content: center;
@@ -20,7 +24,7 @@
 	#clock {
 	   display: flex;
 	   justify-content: center;
-	   font-size: 12px;
+	   font-size: 15px;
 	   font-family: "Mashine";
 	}
 }
@@ -30,7 +34,7 @@
 	#clock {
 	   display: flex;
 	   justify-content: center;
-	   font-size: 10px;
+	   font-size: 15px;
 	   font-family: "Mashine";
 	}
 }
