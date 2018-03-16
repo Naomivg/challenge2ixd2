@@ -19,7 +19,7 @@ window.onload = function() {
 	    document.getElementById("clock").innerHTML = 
 	    (hours + ":" + minutes + ":" + seconds);
 
-	    switch(hours){
+	    switch(18){
 		case 0:
 		case 1:
 		case 2:
@@ -67,18 +67,43 @@ window.onload = function() {
 	}, 1000);
 
 	function darkness(){
+		if(document.querySelector('.bird') !== null) {
+			console.log('De classnaam bestaat');
+			var bird = document.getElementsByClassName('bird')[0];
+			bird.remove();
+		} else {
+			console.log('het bestaat niet')
+		}
+		
 		TweenLite.to('body', 1, {backgroundColor:"#000000", ease:Power3.easeOut})
 		TweenLite.to('#clock', 1, {color:"#ffffff", ease:Power3.easeOut})
+		var bird = document.getElementsByClassName('bird')[0];
+		bird.remove();
 	}
 
 	function sunshine(){
 		TweenLite.to('body', 1, {backgroundColor:"#f49c3d", ease:Power3.easeOut})
 		TweenLite.to('#clock', 1, {color:"#000000", ease:Power3.easeOut})
+		var windowWidth = window.innerWidth;
+		console.log(windowWidth);
+		TweenLite.to('.bird', 2, {left:"700px", repeat:-1, yoyo:true, ease:Linear.easeNone});
+
 	}
 
 	function afternoon(){
+		if(document.querySelector('.bird') !== null) {
+			console.log('De classnaam bestaat');
+			var bird = document.getElementsByClassName('bird')[0];
+			bird.remove();
+		} else {
+			console.log('het bestaat niet')
+		}
+
 		TweenLite.to('body', 1, {backgroundColor:"#8bd8f9", ease:Power3.easeOut})
 		TweenLite.to('#clock', 1, {color:"#000000", ease:Power3.easeOut})
+	
+
+
 	}
 }
 
