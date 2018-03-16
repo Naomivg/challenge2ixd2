@@ -19,7 +19,7 @@ window.onload = function() {
 	    document.getElementById("clock").innerHTML = 
 	    (hours + ":" + minutes + ":" + seconds);
 
-	    switch(18){
+	    switch(hours){
 		case 0:
 		case 1:
 		case 2:
@@ -74,7 +74,7 @@ window.onload = function() {
 		} else {
 			console.log('het bestaat niet')
 		}
-		
+
 		TweenLite.to('body', 1, {backgroundColor:"#000000", ease:Power3.easeOut})
 		TweenLite.to('#clock', 1, {color:"#ffffff", ease:Power3.easeOut})
 		var bird = document.getElementsByClassName('bird')[0];
