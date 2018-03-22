@@ -3,9 +3,7 @@
 }
 
 body{
-	background-color: white;
 	overflow: hidden;
-	/*height: -webkit-fill-available;*/
 }
 
 html, body, #container {
@@ -27,12 +25,6 @@ height:100%;
 	position: relative;
 	width: 30px;
 	height: 30px;
-}
-
-p{
-	font-size: 15px;
-	display: flex;
-	justify-content: center;
 }
 
 .sun {
@@ -63,10 +55,21 @@ p{
   z-index:2;
 }
 
-
+h2{
+	font-size: 15px;
+}
 
 /*TABLET*/
 @media only screen and (min-width: 768px) and (max-width: 1250px){
+	body{
+		overflow: hidden;
+	}
+
+	html, body, #container {
+		width:100%; 
+		height:100%;
+	}
+
 	#clock {
 	   display: flex;
 	   justify-content: center;
@@ -93,10 +96,37 @@ p{
     position: relative;
      top: 20%;
 	}
+
+	.wrapper{
+		display: flex;
+		justify-content: center;
+	}
+
+	.dot{
+	  width:10px;
+	  height:10px;
+	  position:absolute;
+	  background-color:#ffffff;
+	  border-radius: 20px;
+	  z-index:2;
+	}
+
+	h2{
+		font-size: 15px;
+	}
 }
 
 /*DESKTOP*/
 @media only screen and (min-width: 1250px) and (max-width: 1950px){
+	body{
+		overflow: hidden;
+	}
+
+	html, body, #container {
+		width:100%; 
+		height:100%;
+	}
+
 	#clock {
 	   display: flex;
 	   justify-content: center;
@@ -117,21 +147,50 @@ p{
       #FEA553
     );
     background-color: #FAFBB7;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50px; 
     position: relative;
     top: 20%;
+    display: flex;
+    align-items: center;
 	}
+
+	.wrapper{
+		display: flex;
+		justify-content: center;
+	}
+
+	.dot{
+	  width:10px;
+	  height:10px;
+	  position:absolute;
+	  background-color:#ffffff;
+	  border-radius: 20px;
+	  z-index:2;
+	}
+
+	h2{
+	font-size: 25px;
+}
 
 }
 
 
 @media only screen and (min-width: 1950px){
+	body{
+		overflow: hidden;
+	}
+
+	html, body, #container {
+		width:100%; 
+		height:100%;
+	}
+
 	#clock {
 	   display: flex;
 	   justify-content: center;
-	   font-size: 15px;
+	   font-size: 25px;
 	   font-family: "Mashine";
 	}
 
@@ -140,4 +199,38 @@ p{
 		width: 90px;
 		height: 90px;
 	}
+
+	.sun {
+    background-image:
+    radial-gradient(
+      #FAFBB7,
+      #FEA553
+    );
+    background-color: #FAFBB7;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px; 
+    position: relative;
+    top: 20%;
+    display: flex;
+    align-items: center;
+	}
+
+	.wrapper{
+		display: flex;
+		justify-content: center;
+	}
+
+	.dot{
+	  width:10px;
+	  height:10px;
+	  position:absolute;
+	  background-color:#ffffff;
+	  border-radius: 20px;
+	  z-index:2;
+	}
+
+	h2{
+	font-size: 30px;
+}
 }
