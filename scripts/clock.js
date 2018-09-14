@@ -128,9 +128,14 @@ function animatedTextEvening(){
 function animationBird(){
 	var animatedBird = document.getElementsByClassName("bird");
 	var birdy = new TimelineMax({repeat:-1});
-	birdy.to(animatedBird, 5, {left:window.innerWidth, yoyo:false, ease:Linear.easeNone});
+	birdy.to(animatedBird, 10, {left:window.innerWidth, yoyo:false, ease:Linear.easeNone});
 	birdy.restart();
+
+	//birdy.to('.bird', 1, {left:"2000px", yoyo:true,timeScale:15, ease:Linear.easeNone});
 }
+
+
+
 
 function animatedStars(){
 	var numberStars = 20;
